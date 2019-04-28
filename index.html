@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes falling from the ceiling</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            margin: 2em;
+            padding: 0.6em;
+            clear: both;
+            float: right;
+            color: white;
+            background-color: darkviolet;
+            border-color: blueviolet;
+            border-radius: 2pt;
+            font-family: 'Montserrat', sans-serif;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: rgb(184, 45, 243);
+            border-color: blueviolet;
+        }
+
+        button:active {
+            background-color: rgb(114, 18, 155);
+            border-color: blueviolet;
+        }
+
+        .rules {
+            padding-left: 2em;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: medium;
+            font-weight: 300;
+        }
+    </style>
+    <!-- Libraries -->
+    <script src="src/p5.js"></script>
+    <script src="src/matter.min.js"></script>
+    <!-- Sketch -->
+    <script src="box.js"></script>
+    <script src="word.js"></script>
+    <script src="sketch.js"></script>
+
+    <div class="rules">
+        <p>
+            Feeling uninspired?
+        </p>
+        <p>Undecided about your next art piece?
+        </p>
+        <p>Click and drag the mouse to explore the boundaries of the art world.. when you're ready, click the button!
+        </p>
+    </div>
+    <button onmousedown="generateArtPiece()">I want to know my next art piece!</button>
+    <div id="sketch-holder">
+        <!-- Canvas will go here -->
+    </div>
+
+</head>
+
+<body>
+</body>
+
+</html>
